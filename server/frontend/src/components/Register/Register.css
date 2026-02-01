@@ -3,7 +3,7 @@
   flex-direction: column;
   margin: auto;
   margin-top: 2%;
-  background-color: darkturquoise;
+  background-color: rgb(34, 154, 190);
   min-width: 350px;
   width: 30%;
 }
@@ -23,8 +23,10 @@
 .input_field{
   height:40px;
   width:200px;
-  margin:.5cm;
+  margin:.5cm 1cm;
   font-size: medium;
+  border-radius: 16px;
+  border: none;
 }
 
 .submit_panel{
@@ -57,9 +59,9 @@
 .img_icon{
   width:40px;
   margin:.1cm;
-  background-color:#0C9;
   color:#FFF;
   border-radius:50px;
   text-align:center;
   box-shadow: 2px 2px 3px #999;  
+  border-radius: 16px;
 }
