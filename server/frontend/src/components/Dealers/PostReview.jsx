@@ -4,7 +4,6 @@ import "./Dealers.css";
 import "../assets/style.css";
 import Header from '../Header/Header';
 
-
 const PostReview = () => {
   const [dealer, setDealer] = useState({});
   const [review, setReview] = useState("");
@@ -54,12 +53,12 @@ const PostReview = () => {
           "Content-Type": "application/json",
       },
       body: jsoninput,
-  });
+    });
 
-  const json = await res.json();
-  if (json.status === 200) {
-      window.location.href = window.location.origin+"/dealer/"+id;
-  }
+    const json = await res.json();
+    if (json.status === 200) {
+        window.location.href = window.location.origin+"/dealer/"+id;
+    }
 
   }
   const get_dealer = async ()=>{
